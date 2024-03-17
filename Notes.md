@@ -1,0 +1,1 @@
+Because Heroku no longer offers a free version, I wanted to find a free alternative to practice deployments alongside the ones throughout the tutorial. I went with Render by following the steps in [this article](https://www.honeybadger.io/blog/deploy-rails-render/).
