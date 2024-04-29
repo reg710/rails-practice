@@ -5,7 +5,9 @@
 #   gem "sqlite3"
 #
 default: &default
-  adapter: postgresql
+# needed to change adapter for tests to run locally
+# adapter: postgresql
+  adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
