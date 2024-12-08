@@ -6,8 +6,8 @@
 #
 default: &default
 # needed to change adapter for tests to run locally
-  adapter: postgresql
-  # adapter: sqlite3
+  # adapter: postgresql
+  adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
