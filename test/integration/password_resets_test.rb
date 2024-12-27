@@ -90,13 +90,13 @@ class PasswordUpdateTest < PasswordResetForm
     assert_select 'div#error_explanation'
   end
 
-  # test "update with valid password and confirmation" do
-  #   patch password_reset_path(@reset_user.reset_token),
-  #         params: { email: @reset_user.email,
-  #                   user: { password:              "updatedpassword",
-  #                           password_confirmation: "updatedpassword" } }
-  #   assert is_logged_in?
-  #   assert_not flash.empty?
-  #   assert_redirected_to @reset_user
-  # end
+  test "update with valid password and confirmation" do
+    patch password_reset_path(@reset_user.reset_token),
+          params: { email: @reset_user.email,
+                    user: { password:              "updatedpassword",
+                            password_confirmation: "updatedpassword" } }
+    assert is_logged_in?
+    assert_not flash.empty?
+    assert_redirected_to @reset_user
+  end
 end
